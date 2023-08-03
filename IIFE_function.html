@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //IIFEs(Immediately Invokeble Function Expression)
+      (
+           function display(message){
+               console.log(message);
+           }
+       )("Rubel");
+
+       //function expression
+       
+          var display2= function displayMsg(msg){
+               console.log(msg);
+           };
+                 display2("Hi");
+       </script>
+</body>
+</html>

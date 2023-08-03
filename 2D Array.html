@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<head>
+    <title>
+        function
+    </title>
+</head>
+<body>
+    <script>
+        //problem solve--------------
+     //create a function called highest scorer that will
+     //receive a 2d array called playerInfo
+     //based on highest score, return the name of the player 
+
+        function highestRunScore(playerInfo){
+            //console.log(playerInfo);
+            var highestScorer=playerInfo[0][0];
+            var highestScorer=playerInfo[0][1];
+            for(var x=1; x<playerInfo.length; x++){
+                if(highestScorer<playerInfo[x][1]){
+                    highestScorer=playerInfo[x][1];
+                    highestScorer=playerInfo[x][1];
+                }
+            }
+            return highestScorer; 
+        }
+        var playerInfo=[
+            ["Ashraful", 95],
+            ["Shakib", 75],
+            ["Mushfiq", 30],
+            ["Mashrafee", 25],
+        ];
+        var names=highestRunScore(playerInfo); 
+        console.log(names); 
+    </script>
+</body>
+</html>

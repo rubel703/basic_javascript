@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<head>
+    <title>
+        constructor 
+    </title>
+</head>
+<body>
+    <script> 
+        function Student(name,age,cgpa,dept){
+            this.name=name;
+            this.age=age;
+            this.cgpa=cgpa;
+            this.dept=dept;
+
+            this.display=function(){
+                document.write(this.name);
+                document.write(this.age);
+                document.write(this.cgpa);
+                document.write(this.dept);
+            }
+        }
+        var std1=new Student("Hossain Rubel",22,3.91,"CSE")
+        var std2=new Student("Farhan",22,3.70,"textile")
+        std1.display(); 
+        std2.display();
+    </script>
+</body>
+</html>
